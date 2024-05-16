@@ -19,7 +19,7 @@
 ## 기술
 - Tesseract OCR https://github.com/tesseract-ocr/tesseract
 - Python
--- PIL, urllib, webbrowser패키지 등
+-- PIL, urllib, webbrowser패키지, pyinstaller 등
 - dxcam https://github.com/ra1nty/DXcam
 
 ## todo
