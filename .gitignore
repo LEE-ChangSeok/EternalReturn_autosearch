@@ -1,9 +1,8 @@
 *.a
 *.pyc
 *.png
-log.txt
-*.spec
 
-dist/
-build/
 __pycache__/
+lumia_log/
+build/
+dist/
