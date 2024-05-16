@@ -57,13 +57,15 @@ def main():
             if __debug__:
                 cropped.save(os.path.join(current_DIR,f'lumia_log/screen{i}.png'),"PNG")
             namelist.append(scan_text(cropped).strip())
+        if args.myself == False:
+            namelist = namelist[1:]
+        multisearch(namelist)
+
         if __debug__:
             image.save(os.path.join(current_DIR,f'lumia_log/screenshot.png'),"PNG")
             with open(os.path.join(current_DIR,"lumia_log/log.txt"),mode="a") as f:
                 f.write("  and  ".join(namelist) + "\n")
-        if args.myself == False:
-            namelist = namelist[1:]
-        multisearch(namelist)
+            continue
 
         log_output("waiting 35sec until game end")
         for t in range(35):
